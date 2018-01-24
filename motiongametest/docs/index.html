@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JoliSoleil</title>
+  <link href="https://fonts.googleapis.com/css?family=Cardo|Montserrat" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet" title="Default Style">
+</head>
+
+<body>
+  <div id="body">
+    <h1 class="title">1 2 3 soleil</h1>
+    <div class="header">
+      <div class="description">
+        <div class="rules">
+          <p class="win">You won !</p>
+          <p>
+            Game using <b>motion detection</b>. Your goal is to be the first to <b>press the space bar</b> without being spotted by the computeur. You will have <b>3 seconds</b> to move then 3 where you cannot. If a movement is being spotted the computer give you 5 secs to go back
+            to the beginning point. Better for <b>2 players</b>.
+            </br>
+            When play is pressed, you'll have 10 seconds to go to <b>base camp</b> (5 - 10 meters from the computeur).
+          </p>
+        </div>
+        <div class="alerts out">
+          <p class="step visible"></p>
+          <p id="gameCount" class="counter visible"></p>
+          <p class="spotted">Go back to the <b>base</b></p>
+        </div>
+      </div>
+
+      <a href="#" class="play-button visible">Play</a>
+    </div>
+
+    <div id="start" class="counter visible">10</div>
+
+    <video id="video" autoplay></video>
+    <div id="box-container"></div>
+    <div class="game">
+      <!-- <div class="motion-box"></div> -->
+      <div id="eyes" class="no-mobile">
+        <img class="eyesPicto" src="./assets/eye1.svg" data-number="1" alt="">
+        <img class="eyesPicto" src="./assets/eye1.svg" data-number="1" alt="">
+
+        <img class="eyesPicto" src="./assets/eye2.svg" data-number="2" alt="">
+        <img class="eyesPicto" src="./assets/eye2.svg" data-number="2" alt="">
+
+        <img class="eyesPicto" src="./assets/eye3.svg" data-number="3" alt="">
+        <img class="eyesPicto" src="./assets/eye3.svg" data-number="3" alt="">
+
+        <img class="eyesPicto" src="./assets/eye4.svg" data-number="4" alt="">
+        <img class="eyesPicto" src="./assets/eye4.svg" data-number="4" alt="">
+
+        <img class="eyesPicto" src="./assets/eye5.svg" data-number="5" alt="">
+        <img class="eyesPicto" src="./assets/eye5.svg" data-number="5" alt="">
+      </div>
+      <canvas id="motion" class="motionStyle"></canvas>
+      <div id="eyes">
+        <img class="eyesPicto" src="./assets/eye1.svg" data-number="1" alt="">
+        <img class="eyesPicto" src="./assets/eye1.svg" data-number="1" alt="">
+
+        <img class="eyesPicto" src="./assets/eye2.svg" data-number="2" alt="">
+        <img class="eyesPicto" src="./assets/eye2.svg" data-number="2" alt="">
+
+        <img class="eyesPicto" src="./assets/eye3.svg" data-number="3" alt="">
+        <img class="eyesPicto" src="./assets/eye3.svg" data-number="3" alt="">
+
+        <img class="eyesPicto" src="./assets/eye4.svg" data-number="4" alt="">
+        <img class="eyesPicto" src="./assets/eye4.svg" data-number="4" alt="">
+
+        <img class="eyesPicto" src="./assets/eye5.svg" data-number="5" alt="">
+        <img class="eyesPicto" src="./assets/eye5.svg" data-number="5" alt="">
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+<script src="./js/index.js"></script>
+
+</html>
